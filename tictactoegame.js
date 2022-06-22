@@ -1,7 +1,6 @@
 // Function called whenever user tab on any box
 function myfunc() {
 
-	// Setting DOM to all boxes or input field
 	var b1, b2, b3, b4, b5, b6, b7, b8, b9;
 	// ვქმნით მასივს, სადაც შეინახება id-ები.
 	const array1 = ['b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'b9'];
@@ -17,8 +16,8 @@ function myfunc() {
 	b7 = document.getElementById("b7").value;
 	b8 = document.getElementById("b8").value;
 	b9 = document.getElementById("b9").value;
-	// Checking if Player X won or not and after
-	// that disabled all the other fields
+
+	
 	if ((b1 == 'x' || b1 == 'X') && (b2 == 'x' ||
 		b2 == 'X') && (b3 == 'x' || b3 == 'X')) {
 
@@ -184,9 +183,6 @@ function myfunc() {
 		window.alert("X მოთამაშემ მოიგო");
 	}
 
-	// Checking of Player X finish
-	// Checking for Player 0 starts, Is player 0 won or
-	// not and after that disabled all the other fields
 	else if ((b1 == '0' || b1 == '0') && (b2 == '0' ||
 		b2 == '0') && (b3 == '0' || b3 == '0')) {
 		
@@ -236,7 +232,6 @@ function myfunc() {
 		  document.getElementById(array1[i]).disabled = true;
 }	
 //თუ b7, b8 და b9 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
-		
 		
 /*		
 		document.getElementById("b1").disabled = true;
@@ -357,8 +352,6 @@ function myfunc() {
         window.alert("0 მოთამაშემ მოიგო");
 	}
 
-	// Checking of Player 0 finish
-	// Here, Checking about Tie
 	else if ((b1 == 'X' || b1 == '0') && (b2 == 'X'
 		|| b2 == '0') && (b3 == 'X' || b3 == '0') &&
 		(b4 == 'X' || b4 == '0') && (b5 == 'X' ||
@@ -372,21 +365,17 @@ function myfunc() {
 	
 //თუ ვერც ერთმა მოთამაშემ ვერ მოიგო, მაშინ შესაბამისი შეტყობინება მიიღება.		
 
-
-
-	
-
 }
 
 //თუ ერთ-ერთმა მოთამაშემ მოიგო, შესაბამასი შეტყობინება მიიღება.	
 
 
-// Function to reset game
-
-// 
+// თამაშის გადატვირთვის ფუნქცია.
 
 function myfunc_2() {
 	location.reload();
+
+// გადატვირთვის შემთხვევაში, input ველების მნიშვნელობები წაიშლება.
 	
 	for (let i=0;i<array1.length; i++){
 	document.getElementById(array1[i]).value = '';}
@@ -404,10 +393,7 @@ function myfunc_2() {
 */
 }
 
-// Here onwards, functions check turn of the player
-// and put accordingly value X or 0
-
-// ეს ფუნქციები ამოწმებენ იმას, თუ რომელი მოთამაშეს რიგია, და სმავს შესაბამის უჯრედში X-ს ან 0-ს.
+// ეს ფუნქციები ამოწმებენ იმას, თუ რომელი მოთამაშეს რიგია, და წერენ შესაბამის უჯრედში X-ს ან 0-ს.
 // ამის შემდეგ უჯრედთან წვდომა იზღუდება.
 
 flag = 1;
