@@ -1,11 +1,9 @@
-	/* CSS Code */
-	/* Heading */
 	h1 {
 		color: orangered;
 		font-size: 45px;
 	}
 
-	/* 3*3 Grid */
+	/* 9 უჯრედი. */
 	#b1, #b2, #b3, #b4, #b5,
 	#b6, #b7, #b8, #b9 {
 		width: 80px;
@@ -17,7 +15,7 @@
 		text-align: center;
 	}
 
-	/* Reset Button */
+	/* გადატვირთვის ღილაკი */
 	#but {
 		box-sizing: border-box;
 		width: 95px;
@@ -34,7 +32,7 @@
 		cursor: pointer;
 	}
 
-	/* Player turn space */
+	/* პარაგრაფი, სადაც დაიწერება, ვისი ჯერია ახლა. */
 	#print {
 		font-family: Verdana,
 			Geneva, Tahoma, sans-serif;
@@ -43,12 +41,12 @@
 		font-size: 20px;
 	}
 
-	/* Main Container */
+	/* Main კონტეინერი. */
 	#main {
 		text-align: center;
 	}
 
-	/* Game Instruction Text */
+	/* თამაშის წესების პარაგრაფი. */
 	#ins {
 		font-family: Verdana,
 			Geneva, Tahoma, sans-serif;
