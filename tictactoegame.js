@@ -1,7 +1,5 @@
-// Function called whenever user tab on any box
 function myfunc() {
 
-	// Setting DOM to all boxes or input field
 	var b1, b2, b3, b4, b5, b6, b7, b8, b9;
 	// ვქმნით მასივს, სადაც შეინახება id-ები.
 	const array1 = ['b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8', 'b9'];
@@ -17,16 +15,15 @@ function myfunc() {
 	b7 = document.getElementById("b7").value;
 	b8 = document.getElementById("b8").value;
 	b9 = document.getElementById("b9").value;
-	// Checking if Player X won or not and after
-	// that disabled all the other fields
+
 	if ((b1 == 'x' || b1 == 'X') && (b2 == 'x' ||
 		b2 == 'X') && (b3 == 'x' || b3 == 'X')) {
 
 		for (let i=3;i<array1.length; i++){
 		
 		document.getElementById(array1[i]).disabled = true;
-		}
-//თუ b1, b2 და b3 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.
+}
+	// თუ b1, b2 და b3 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.
 
 /*
 		document.getElementById("b4").disabled = true;
@@ -46,8 +43,8 @@ function myfunc() {
 		
 		document.getElementById(array1[i]).disabled = true;
 	    if (array1[i] == "b4") continue;
-	}
-//თუ b1, b4 და b7 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.
+}	
+	// თუ b1, b4 და b7 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.
 
 	/*	document.getElementById("b2").disabled = true;
 		document.getElementById("b3").disabled = true;
@@ -66,7 +63,7 @@ function myfunc() {
 		
 		document.getElementById(array1[i]).disabled = true;
 }
-//თუ b7, b8 და b9 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.
+	// თუ b7, b8 და b9 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.
 		
 /*		document.getElementById("b1").disabled = true;
 		document.getElementById("b2").disabled = true;
@@ -86,7 +83,7 @@ function myfunc() {
         
 		if(array1[i] == "b3" || array1[i] == "b6") continue;
 }
-//თუ b3, b6 და b9 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.
+	// თუ b3, b6 და b9 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.
 
 /*		
 		document.getElementById("b1").disabled = true;
@@ -98,6 +95,7 @@ function myfunc() {
 */	
 	window.alert("X მოთამაშემ მოიგო");
 	}
+	
 	else if ((b1 == 'x' || b1 == 'X') && (b5 == 'x' ||
 		b5 == 'X') && (b9 == 'x' || b9 == 'X')) {
 		
@@ -107,7 +105,7 @@ function myfunc() {
         
 		  if(array1[i] == "b5") continue;
 }
-//თუ b1, b5 და b9 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.
+	// თუ b1, b5 და b9 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.
 
 /*		
 		document.getElementById("b2").disabled = true;
@@ -119,6 +117,7 @@ function myfunc() {
 */	
 	window.alert("X მოთამაშემ მოიგო");
 	}
+	
 	else if ((b3 == 'x' || b3 == 'X') && (b5 == 'x' ||
 		b5 == 'X') && (b7 == 'x' || b7 == 'X')) {
 		
@@ -128,7 +127,7 @@ function myfunc() {
         
 		  if(array1[i] == "b3" || array1[i] == "b5" || array1[i] == "b7") continue;
 }
-//თუ b3, b5 და b7 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.
+	// თუ b3, b5 და b7 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.
 		
 /*		
 		document.getElementById("b1").disabled = true;
@@ -140,6 +139,7 @@ function myfunc() {
 */		
 		window.alert("X მოთამაშემ მოიგო");
 	}
+	
 	else if ((b2 == 'x' || b2 == 'X') && (b5 == 'x' ||
 		b5 == 'X') && (b8 == 'x' || b8 == 'X')) {
 		
@@ -150,7 +150,7 @@ function myfunc() {
         
 		  if(array1[i] == "b2" || array1[i] == "b5" || array1[i] == "b8") continue;
 }	
-//თუ b2, b5 და b8 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.	
+	// თუ b2, b5 და b8 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.	
 		
 /*		
 		document.getElementById("b1").disabled = true;
@@ -162,6 +162,7 @@ function myfunc() {
 */		
 		window.alert("X მოთამაშემ მოიგო");
 	}
+	
 	else if ((b4 == 'x' || b4 == 'X') && (b5 == 'x' ||
 		b5 == 'X') && (b6 == 'x' || b6 == 'X')) {
 		
@@ -171,7 +172,7 @@ function myfunc() {
         
 		  if(array1[i] == "b4" || array1[i] == "b5" || array1[i] == "b6") continue;
 }	
-//თუ b4, b5 და b6 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
+	// თუ b4, b5 და b6 ველებში x დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
 				
 /*		
 		document.getElementById("b1").disabled = true;
@@ -183,10 +184,7 @@ function myfunc() {
 */		
 		window.alert("X მოთამაშემ მოიგო");
 	}
-
-	// Checking of Player X finish
-	// Checking for Player 0 starts, Is player 0 won or
-	// not and after that disabled all the other fields
+	
 	else if ((b1 == '0' || b1 == '0') && (b2 == '0' ||
 		b2 == '0') && (b3 == '0' || b3 == '0')) {
 		
@@ -194,7 +192,7 @@ function myfunc() {
 		
 		  document.getElementById(array1[i]).disabled = true;        
 }	
-//თუ b1, b2 და b3 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
+	// თუ b1, b2 და b3 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
 		
 
 /*		
@@ -207,6 +205,7 @@ function myfunc() {
 */		
 		window.alert("0 მოთამაშემ მოიგო");
 	}
+	
 	else if ((b1 == '0' || b1 == '0') && (b4 == '0' ||
 		b4 == '0') && (b7 == '0' || b7 == '0')) {
 		
@@ -216,7 +215,7 @@ function myfunc() {
         
 		  if(array1[i] == "b4" || array1[i] == "b7") continue;
 }			
-//თუ b1, b4 და b7 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
+	// თუ b1, b4 და b7 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
 
 /*		
 		document.getElementById("b2").disabled = true;
@@ -235,7 +234,7 @@ function myfunc() {
 		
 		  document.getElementById(array1[i]).disabled = true;
 }	
-//თუ b7, b8 და b9 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
+	// თუ b7, b8 და b9 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
 		
 		
 /*		
@@ -257,7 +256,7 @@ function myfunc() {
         
 		  if(array1[i] == "b3" || array1[i] == "b6") continue;
 }	
-//თუ b3, b6 და b9 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
+	// თუ b3, b6 და b9 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
 		
 		
 /*		
@@ -270,6 +269,7 @@ function myfunc() {
 */		
 		window.alert("0 მოთამაშემ მოიგო");
 	}
+	
 	else if ((b1 == '0' || b1 == '0') && (b5 == '0' ||
 		b5 == '0') && (b9 == '0' || b9 == '0')) {
 		
@@ -279,7 +279,7 @@ function myfunc() {
         
 		  if(array1[i] == "b5") continue;
 }	
-//თუ b1, b5 და b9 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
+	// თუ b1, b5 და b9 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
 		
 /*		
 		document.getElementById("b2").disabled = true;
@@ -300,7 +300,7 @@ function myfunc() {
         
 		  if(array1[i] == "b3" || array1[i] == "b5" || array1[i] == "b7") continue;
 }	
-//თუ b3, b5 და b7 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
+	// თუ b3, b5 და b7 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
 		
 		
 /*		
@@ -322,7 +322,7 @@ function myfunc() {
         
 		  if(array1[i] == "b2" || array1[i] == "b5" || array1[i] == "b8") continue;
 }	
-//თუ b2, b5 და b8 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
+	// თუ b2, b5 და b8 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
 		
 /*		
 		document.getElementById("b1").disabled = true;
@@ -343,7 +343,8 @@ function myfunc() {
         
 		  if(array1[i] == "b4" || array1[i] == "b5" || array1[i] == "b6") continue;
 }	
-//თუ b4, b5 და b6 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
+
+	//თუ b4, b5 და b6 ველებში 0 დასმულია, დანარჩენ ველებთან წვდომა იზღუდება.		
 		
 		
 /*	
@@ -357,8 +358,6 @@ function myfunc() {
         window.alert("0 მოთამაშემ მოიგო");
 	}
 
-	// Checking of Player 0 finish
-	// Here, Checking about Tie
 	else if ((b1 == 'X' || b1 == '0') && (b2 == 'X'
 		|| b2 == '0') && (b3 == 'X' || b3 == '0') &&
 		(b4 == 'X' || b4 == '0') && (b5 == 'X' ||
@@ -370,20 +369,11 @@ function myfunc() {
 			window.alert('ყაიმი');
 	}
 	
-//თუ ვერც ერთმა მოთამაშემ ვერ მოიგო, მაშინ შესაბამისი შეტყობინება მიიღება.		
-
-
-
-	
+// თუ ვერც ერთმა მოთამაშემ ვერ მოიგო, მაშინ მიიღება შესაბამისი შეტყობინება.
 
 }
 
-//თუ ერთ-ერთმა მოთამაშემ მოიგო, შესაბამასი შეტყობინება მიიღება.	
-
-
-// Function to reset game
-
-// 
+// ფუნქცია გვერდის გადატვირთვისთვის.
 
 function myfunc_2() {
 	location.reload();
@@ -404,10 +394,8 @@ function myfunc_2() {
 */
 }
 
-// Here onwards, functions check turn of the player
-// and put accordingly value X or 0
 
-// ეს ფუნქციები ამოწმებენ იმას, თუ რომელი მოთამაშეს რიგია, და სმავს შესაბამის უჯრედში X-ს ან 0-ს.
+// ეს ფუნქციები ამოწმებენ იმას, თუ რომელი მოთამაშის რიგია, და სვამენ შესაბამის უჯრედში X-ს ან 0-ს.
 // ამის შემდეგ უჯრედთან წვდომა იზღუდება.
 
 flag = 1;
@@ -527,5 +515,3 @@ function myfunc_11() {
 		flag = 1;
 	}
 }
-
-</script>
